@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA PS5 Tournament | NEWS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="container">
+        <header>
+            <h1>FIFA 26 <span>PS5 TOURNAMENT</span></h1>
+            <nav>
+                <button class="nav-btn active" onclick="showTab('standings')">Таблица</button>
+                <button class="nav-btn" onclick="showTab('matches')">Матчи</button>
+                <button class="nav-btn" onclick="showTab('rules')">Правила</button>
+            </nav>
+        </header>
+
+        <main id="content">
+            <section id="standings" class="tab-content active">
+                <div class="glass-card">
+                    <h2>Турнирная таблица</h2>
+                    <table id="league-table">
+                        <thead>
+                            <tr>
+                                <th>М</th>
+                                <th>Команда</th>
+                                <th>И</th>
+                                <th>В</th>
+                                <th>Н</th>
+                                <th>П</th>
+                                <th>Очки</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="matches" class="tab-content">
+                <div class="glass-card">
+                    <h2>Расписание и Результаты</h2>
+                    <div class="match-item">
+                        <span>Real Madrid</span>
+                        <span class="score">3 : 1</span>
+                        <span>PSG</span>
+                    </div>
+                    <div class="match-item">
+                        <span>Man City</span>
+                        <span class="score">0 : 2</span>
+                        <span>Liverpool</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rules" class="tab-content">
+                <div class="glass-card">
+                    <h2>Регламент турнира</h2>
+                    <ul>
+                        <li>Длительность тайма: 6 минут</li>
+                        <li>Сложность: Легендарный</li>
+                        <li>Победа: 3 очка | Ничья: 1 очко | Поражение: 0 очков</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
